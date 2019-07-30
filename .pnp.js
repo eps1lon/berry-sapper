@@ -2437,7 +2437,7 @@ function $$SETUP_STATE(hydrateRuntimeState) {
       ]],
       ["svelte", [
         ["npm:3.6.9", {
-          "packageLocation": "./.yarn/cache/svelte-npm-3.6.9-e3f62e0110f75f256d4ee3b624f27f9118cf8849d854db3b40b3bed9685d50ce.zip/node_modules/svelte/",
+          "packageLocation": "./.yarn/unplugged/svelte-npm-3.6.9-e3f62e0110f75f256d4ee3b624f27f9118cf8849d854db3b40b3bed9685d50ce/node_modules/svelte/",
           "packageDependencies": [
             ["svelte", "npm:3.6.9"]
           ]
