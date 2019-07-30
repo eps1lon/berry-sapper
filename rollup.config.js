@@ -1,4 +1,4 @@
-import * as path from 'path';
+import alias from 'rollup-plugin-alias';
 import resolve from 'rollup-plugin-pnp-resolve';
 import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
@@ -16,23 +16,12 @@ const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /
 const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/');
 
 function resolveSapperModule() {
-	const moduleDirectory = path.resolve(__dirname, './src/node_modules/@sapper');
-
-	return {
-		name: 'resolve-@sapper',
-		resolveId(request) {
-			// Will throw "Could not load" if extensions are ommitted
-			if (request === '@sapper/app') {
-				return path.join(moduleDirectory, 'app.mjs')
-			} else if (request === '@sapper/server') {
-				return path.join(moduleDirectory, 'server.mjs')
-			} else if (request === '@sapper/service-worker') {
-				return path.join(moduleDirectory, 'service-worker.js')
-			}
-
-			return null
-		}
-	}
+	return alias({
+		'@sapper/app': './node_modules/@sapper/app',
+		'@sapper/server': './node_modules/@sapper/server',
+		'@sapper/service-worker': './node_modules/@sapper/service-worker',
+    resolve: ['.mjs', '.js'],
+	});
 }
 
 const moduleExtensions = ['.mjs', '.js', '.json', '.node'];

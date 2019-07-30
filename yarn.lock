@@ -934,6 +934,7 @@ __metadata:
     npm-run-all: "npm:^4.1.5"
     polka: "npm:next"
     rollup: "npm:^1.12.0"
+    rollup-plugin-alias: "npm:^1.5.2"
     rollup-plugin-babel: "npm:^4.0.2"
     rollup-plugin-commonjs: "npm:^10.0.0"
     rollup-plugin-pnp-resolve: "npm:^1.1.0"
@@ -1928,6 +1929,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup-plugin-alias@npm:^1.5.2":
+  version: 1.5.2
+  resolution: "rollup-plugin-alias@npm:1.5.2"
+  dependencies:
+    slash: "npm:^3.0.0"
+  checksum: d3ae2791eeaf66084c40164e5a9477aa98c531822a28fe30c0d0d04879230efd4245335bc05f5649c99f1c8c7cbd13aff004a05e26d87b53cf767003e543083c
+  languageName: node
+  linkType: hard
+
 "rollup-plugin-babel@npm:^4.0.2":
   version: 4.3.3
   resolution: "rollup-plugin-babel@npm:4.3.3"
@@ -2114,6 +2124,13 @@ __metadata:
     "@polka/url": "npm:^0.5.0"
     mime: "npm:^2.3.1"
   checksum: 8eb58a0a6bf8d5f29c43066c1ef45aa2451b9e4ca17e4dc7d09b483a752c7b5d649a88ae4daa97f0af403fc756e37bed295d5b4db67298e12675e506dde141c5
+  languageName: node
+  linkType: hard
+
+"slash@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "slash@npm:3.0.0"
+  checksum: 72a04f6327b78d6b70a6d2e0207cfe5db6c64a8c8df444a9dde7b42ae0ad8b732f0e58a63dbb6ab66e6128479d2c01a7ec3a715bf3c291d2437cb6ee135dccde
   languageName: node
   linkType: hard
 
