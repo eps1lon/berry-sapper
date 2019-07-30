@@ -944,6 +944,8 @@ __metadata:
     sirv: "npm:^0.4.0"
     svelte: "npm:^3.0.0"
   dependenciesMeta:
+    sapper:
+      unplugged: true
     svelte:
       unplugged: true
   languageName: unknown
