@@ -173,7 +173,6 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["npm-run-all", "npm:4.1.5"],
             ["polka", "npm:1.0.0-next.4"],
             ["rollup", "npm:1.17.0"],
-            ["rollup-plugin-alias", "npm:1.5.2"],
             ["rollup-plugin-babel", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:4.3.3"],
             ["rollup-plugin-commonjs", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:10.0.1"],
             ["rollup-plugin-pnp-resolve", "npm:1.1.0"],
@@ -1150,7 +1149,6 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["npm-run-all", "npm:4.1.5"],
             ["polka", "npm:1.0.0-next.4"],
             ["rollup", "npm:1.17.0"],
-            ["rollup-plugin-alias", "npm:1.5.2"],
             ["rollup-plugin-babel", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:4.3.3"],
             ["rollup-plugin-commonjs", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:10.0.1"],
             ["rollup-plugin-pnp-resolve", "npm:1.1.0"],
@@ -2179,15 +2177,6 @@ function $$SETUP_STATE(hydrateRuntimeState) {
           ]
         }]
       ]],
-      ["rollup-plugin-alias", [
-        ["npm:1.5.2", {
-          "packageLocation": "./.yarn/cache/rollup-plugin-alias-npm-1.5.2-0ed1ca04c1393b61d4611a0e103598a8837208fbd2a592b950dc867c09a24dc5.zip/node_modules/rollup-plugin-alias/",
-          "packageDependencies": [
-            ["rollup-plugin-alias", "npm:1.5.2"],
-            ["slash", "npm:3.0.0"]
-          ]
-        }]
-      ]],
       ["rollup-plugin-babel", [
         ["virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:4.3.3", {
           "packageLocation": "./.yarn/virtual/rollup-plugin-babel-virtual-3828682046825f4afe4212249b8253e947db67c8ae56ffddf434031a7e88f733/0/cache/rollup-plugin-babel-npm-4.3.3-63ab4c75c89dd80144f9c1e7b5805d6754b615fedca3536f76bbc3c8b3b36c8b.zip/node_modules/rollup-plugin-babel/",
@@ -2355,14 +2344,6 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["sirv", "npm:0.4.2"],
             ["@polka/url", "npm:0.5.0"],
             ["mime", "npm:2.4.4"]
-          ]
-        }]
-      ]],
-      ["slash", [
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/slash-npm-3.0.0-f740a7344f99c443b553ded7863be222811f5117487093720d0017d68c506848.zip/node_modules/slash/",
-          "packageDependencies": [
-            ["slash", "npm:3.0.0"]
           ]
         }]
       ]],
