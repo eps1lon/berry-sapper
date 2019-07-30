@@ -151,6 +151,9 @@ function $$SETUP_STATE(hydrateRuntimeState) {
       116,
       114,
       112,
+      42,
+      34,
+      31,
       2
     ],
     "packageRegistryData": [
@@ -163,11 +166,13 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["@babel/plugin-transform-runtime", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/preset-env", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/runtime", "npm:7.5.5"],
+            ["@sapper/app", "link:./src/node_modules/@sapper/app?locator=TODO%40workspace%3A."],
+            ["@sapper/server", "link:./src/node_modules/@sapper/server?locator=TODO%40workspace%3A."],
+            ["@sapper/service-worker", "link:./src/node_modules/@sapper/service-worker?locator=TODO%40workspace%3A."],
             ["compression", "npm:1.7.4"],
             ["npm-run-all", "npm:4.1.5"],
             ["polka", "npm:1.0.0-next.4"],
             ["rollup", "npm:1.17.0"],
-            ["rollup-plugin-alias", "npm:1.5.2"],
             ["rollup-plugin-babel", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:4.3.3"],
             ["rollup-plugin-commonjs", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:10.0.1"],
             ["rollup-plugin-pnp-resolve", "npm:1.1.0"],
@@ -1087,6 +1092,30 @@ function $$SETUP_STATE(hydrateRuntimeState) {
           ]
         }]
       ]],
+      ["@sapper/app", [
+        ["link:./src/node_modules/@sapper/app?locator=TODO%40workspace%3A.", {
+          "packageLocation": "./src/node_modules/@sapper/app/",
+          "packageDependencies": [
+            ["@sapper/app", "link:./src/node_modules/@sapper/app?locator=TODO%40workspace%3A."]
+          ]
+        }]
+      ]],
+      ["@sapper/server", [
+        ["link:./src/node_modules/@sapper/server?locator=TODO%40workspace%3A.", {
+          "packageLocation": "./src/node_modules/@sapper/server/",
+          "packageDependencies": [
+            ["@sapper/server", "link:./src/node_modules/@sapper/server?locator=TODO%40workspace%3A."]
+          ]
+        }]
+      ]],
+      ["@sapper/service-worker", [
+        ["link:./src/node_modules/@sapper/service-worker?locator=TODO%40workspace%3A.", {
+          "packageLocation": "./src/node_modules/@sapper/service-worker/",
+          "packageDependencies": [
+            ["@sapper/service-worker", "link:./src/node_modules/@sapper/service-worker?locator=TODO%40workspace%3A."]
+          ]
+        }]
+      ]],
       ["@types/estree", [
         ["npm:0.0.39", {
           "packageLocation": "./.yarn/cache/@types-estree-npm-0.0.39-1605ecc1de84849260de27398ff9931939399558278a2de88c090b68f42ce38e.zip/node_modules/@types/estree/",
@@ -1113,11 +1142,13 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["@babel/plugin-transform-runtime", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/preset-env", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/runtime", "npm:7.5.5"],
+            ["@sapper/app", "link:./src/node_modules/@sapper/app?locator=TODO%40workspace%3A."],
+            ["@sapper/server", "link:./src/node_modules/@sapper/server?locator=TODO%40workspace%3A."],
+            ["@sapper/service-worker", "link:./src/node_modules/@sapper/service-worker?locator=TODO%40workspace%3A."],
             ["compression", "npm:1.7.4"],
             ["npm-run-all", "npm:4.1.5"],
             ["polka", "npm:1.0.0-next.4"],
             ["rollup", "npm:1.17.0"],
-            ["rollup-plugin-alias", "npm:1.5.2"],
             ["rollup-plugin-babel", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:4.3.3"],
             ["rollup-plugin-commonjs", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:10.0.1"],
             ["rollup-plugin-pnp-resolve", "npm:1.1.0"],
@@ -2146,15 +2177,6 @@ function $$SETUP_STATE(hydrateRuntimeState) {
           ]
         }]
       ]],
-      ["rollup-plugin-alias", [
-        ["npm:1.5.2", {
-          "packageLocation": "./.yarn/cache/rollup-plugin-alias-npm-1.5.2-0ed1ca04c1393b61d4611a0e103598a8837208fbd2a592b950dc867c09a24dc5.zip/node_modules/rollup-plugin-alias/",
-          "packageDependencies": [
-            ["rollup-plugin-alias", "npm:1.5.2"],
-            ["slash", "npm:3.0.0"]
-          ]
-        }]
-      ]],
       ["rollup-plugin-babel", [
         ["virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:4.3.3", {
           "packageLocation": "./.yarn/virtual/rollup-plugin-babel-virtual-3828682046825f4afe4212249b8253e947db67c8ae56ffddf434031a7e88f733/0/cache/rollup-plugin-babel-npm-4.3.3-63ab4c75c89dd80144f9c1e7b5805d6754b615fedca3536f76bbc3c8b3b36c8b.zip/node_modules/rollup-plugin-babel/",
@@ -2322,14 +2344,6 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["sirv", "npm:0.4.2"],
             ["@polka/url", "npm:0.5.0"],
             ["mime", "npm:2.4.4"]
-          ]
-        }]
-      ]],
-      ["slash", [
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/slash-npm-3.0.0-f740a7344f99c443b553ded7863be222811f5117487093720d0017d68c506848.zip/node_modules/slash/",
-          "packageDependencies": [
-            ["slash", "npm:3.0.0"]
           ]
         }]
       ]],

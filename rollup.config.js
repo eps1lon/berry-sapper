@@ -1,4 +1,3 @@
-import alias from 'rollup-plugin-alias';
 import resolve from 'rollup-plugin-pnp-resolve';
 import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
@@ -14,15 +13,6 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) || onwarn(warning);
 const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/');
-
-function resolveSapperModule() {
-	return alias({
-		'@sapper/app': './node_modules/@sapper/app',
-		'@sapper/server': './node_modules/@sapper/server',
-		'@sapper/service-worker': './node_modules/@sapper/service-worker',
-    resolve: ['.mjs', '.js'],
-	});
-}
 
 const moduleExtensions = ['.mjs', '.js', '.json', '.node'];
 
@@ -40,7 +30,6 @@ export default {
 				hydratable: true,
 				emitCss: true
 			}),
-			resolveSapperModule(),
 			resolve({
 				browser: true,
 				dedupe,
@@ -85,7 +74,6 @@ export default {
 				generate: 'ssr',
 				dev
 			}),
-			resolveSapperModule(),
 			resolve({
 				dedupe,
 				extensions: moduleExtensions
@@ -103,7 +91,6 @@ export default {
 		input: config.serviceworker.input(),
 		output: config.serviceworker.output(),
 		plugins: [
-			resolveSapperModule(),
 			resolve({
 				extensions: moduleExtensions
 			}),
