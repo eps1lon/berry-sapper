@@ -151,7 +151,9 @@ function $$SETUP_STATE(hydrateRuntimeState) {
       116,
       114,
       112,
-      27,
+      42,
+      34,
+      31,
       2
     ],
     "packageRegistryData": [
@@ -164,7 +166,9 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["@babel/plugin-transform-runtime", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/preset-env", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/runtime", "npm:7.5.5"],
-            ["@sapper", "link:./src/node_modules/@sapper?locator=TODO%40workspace%3A."],
+            ["@sapper/app", "link:./src/node_modules/@sapper/app?locator=TODO%40workspace%3A."],
+            ["@sapper/server", "link:./src/node_modules/@sapper/server?locator=TODO%40workspace%3A."],
+            ["@sapper/service-worker", "link:./src/node_modules/@sapper/service-worker?locator=TODO%40workspace%3A."],
             ["compression", "npm:1.7.4"],
             ["npm-run-all", "npm:4.1.5"],
             ["polka", "npm:1.0.0-next.4"],
@@ -1089,11 +1093,27 @@ function $$SETUP_STATE(hydrateRuntimeState) {
           ]
         }]
       ]],
-      ["@sapper", [
-        ["link:./src/node_modules/@sapper?locator=TODO%40workspace%3A.", {
-          "packageLocation": "./src/node_modules/@sapper/",
+      ["@sapper/app", [
+        ["link:./src/node_modules/@sapper/app?locator=TODO%40workspace%3A.", {
+          "packageLocation": "./src/node_modules/@sapper/app/",
           "packageDependencies": [
-            ["@sapper", "link:./src/node_modules/@sapper?locator=TODO%40workspace%3A."]
+            ["@sapper/app", "link:./src/node_modules/@sapper/app?locator=TODO%40workspace%3A."]
+          ]
+        }]
+      ]],
+      ["@sapper/server", [
+        ["link:./src/node_modules/@sapper/server?locator=TODO%40workspace%3A.", {
+          "packageLocation": "./src/node_modules/@sapper/server/",
+          "packageDependencies": [
+            ["@sapper/server", "link:./src/node_modules/@sapper/server?locator=TODO%40workspace%3A."]
+          ]
+        }]
+      ]],
+      ["@sapper/service-worker", [
+        ["link:./src/node_modules/@sapper/service-worker?locator=TODO%40workspace%3A.", {
+          "packageLocation": "./src/node_modules/@sapper/service-worker/",
+          "packageDependencies": [
+            ["@sapper/service-worker", "link:./src/node_modules/@sapper/service-worker?locator=TODO%40workspace%3A."]
           ]
         }]
       ]],
@@ -1123,7 +1143,9 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["@babel/plugin-transform-runtime", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/preset-env", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/runtime", "npm:7.5.5"],
-            ["@sapper", "link:./src/node_modules/@sapper?locator=TODO%40workspace%3A."],
+            ["@sapper/app", "link:./src/node_modules/@sapper/app?locator=TODO%40workspace%3A."],
+            ["@sapper/server", "link:./src/node_modules/@sapper/server?locator=TODO%40workspace%3A."],
+            ["@sapper/service-worker", "link:./src/node_modules/@sapper/service-worker?locator=TODO%40workspace%3A."],
             ["compression", "npm:1.7.4"],
             ["npm-run-all", "npm:4.1.5"],
             ["polka", "npm:1.0.0-next.4"],

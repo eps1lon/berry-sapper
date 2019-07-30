@@ -12,7 +12,9 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
-    "@sapper": "link:./src/node_modules/@sapper",
+    "@sapper/app": "link:./src/node_modules/@sapper/app",
+    "@sapper/server": "link:./src/node_modules/@sapper/server",
+    "@sapper/service-worker": "link:./src/node_modules/@sapper/service-worker",
     "compression": "^1.7.1",
     "polka": "next",
     "rollup-plugin-alias": "^1.5.2",
