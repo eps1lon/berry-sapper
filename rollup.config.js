@@ -21,6 +21,7 @@ function resolveSapperModule() {
 	return {
 		name: 'resolve-@sapper',
 		resolveId(request) {
+			// Will throw "Could not load" if extensions are ommitted
 			if (request === '@sapper/app') {
 				return path.join(moduleDirectory, 'app.mjs')
 			} else if (request === '@sapper/server') {
