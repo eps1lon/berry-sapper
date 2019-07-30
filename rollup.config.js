@@ -1,3 +1,4 @@
+import * as path from 'path';
 import resolve from 'rollup-plugin-pnp-resolve';
 import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
@@ -14,6 +15,25 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) || onwarn(warning);
 const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/');
 
+function resolveSapperModule() {
+	const moduleDirectory = path.resolve(__dirname, './src/node_modules/@sapper');
+
+	return {
+		name: 'resolve-@sapper',
+		resolveId(request) {
+			if (request === '@sapper/app') {
+				return path.join(moduleDirectory, 'app.mjs')
+			} else if (request === '@sapper/server') {
+				return path.join(moduleDirectory, 'server.mjs')
+			}
+
+			return null
+		}
+	}
+}
+
+const moduleExtensions = ['.mjs', '.js', '.json', '.node'];
+
 export default {
 	client: {
 		input: config.client.input(),
@@ -28,9 +48,11 @@ export default {
 				hydratable: true,
 				emitCss: true
 			}),
+			resolveSapperModule(),
 			resolve({
 				browser: true,
-				dedupe
+				dedupe,
+				extensions: moduleExtensions
 			}),
 			commonjs(),
 
@@ -71,8 +93,10 @@ export default {
 				generate: 'ssr',
 				dev
 			}),
+			resolveSapperModule(),
 			resolve({
-				dedupe
+				dedupe,
+				extensions: moduleExtensions
 			}),
 			commonjs()
 		],
@@ -87,7 +111,10 @@ export default {
 		input: config.serviceworker.input(),
 		output: config.serviceworker.output(),
 		plugins: [
-			resolve(),
+			resolveSapperModule(),
+			resolve({
+				extensions: moduleExtensions
+			}),
 			replace({
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
