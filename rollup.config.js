@@ -25,6 +25,8 @@ function resolveSapperModule() {
 				return path.join(moduleDirectory, 'app.mjs')
 			} else if (request === '@sapper/server') {
 				return path.join(moduleDirectory, 'server.mjs')
+			} else if (request === '@sapper/service-worker') {
+				return path.join(moduleDirectory, 'service-worker.js')
 			}
 
 			return null
