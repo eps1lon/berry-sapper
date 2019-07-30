@@ -907,6 +907,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sapper@link:./src/node_modules/@sapper?locator=TODO%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@sapper@link:./src/node_modules/@sapper?locator=TODO%40workspace%3A."
+  languageName: node
+  linkType: soft
+
 "@types/estree@npm:0.0.39":
   version: 0.0.39
   resolution: "@types/estree@npm:0.0.39"
@@ -930,6 +936,7 @@ __metadata:
     "@babel/plugin-transform-runtime": "npm:^7.0.0"
     "@babel/preset-env": "npm:^7.0.0"
     "@babel/runtime": "npm:^7.0.0"
+    "@sapper": "link:./src/node_modules/@sapper?locator=TODO%40workspace%3A."
     compression: "npm:^1.7.1"
     npm-run-all: "npm:^4.1.5"
     polka: "npm:next"

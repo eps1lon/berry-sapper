@@ -151,6 +151,7 @@ function $$SETUP_STATE(hydrateRuntimeState) {
       116,
       114,
       112,
+      27,
       2
     ],
     "packageRegistryData": [
@@ -163,6 +164,7 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["@babel/plugin-transform-runtime", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/preset-env", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/runtime", "npm:7.5.5"],
+            ["@sapper", "link:./src/node_modules/@sapper?locator=TODO%40workspace%3A."],
             ["compression", "npm:1.7.4"],
             ["npm-run-all", "npm:4.1.5"],
             ["polka", "npm:1.0.0-next.4"],
@@ -1087,6 +1089,14 @@ function $$SETUP_STATE(hydrateRuntimeState) {
           ]
         }]
       ]],
+      ["@sapper", [
+        ["link:./src/node_modules/@sapper?locator=TODO%40workspace%3A.", {
+          "packageLocation": "./src/node_modules/@sapper/",
+          "packageDependencies": [
+            ["@sapper", "link:./src/node_modules/@sapper?locator=TODO%40workspace%3A."]
+          ]
+        }]
+      ]],
       ["@types/estree", [
         ["npm:0.0.39", {
           "packageLocation": "./.yarn/cache/@types-estree-npm-0.0.39-1605ecc1de84849260de27398ff9931939399558278a2de88c090b68f42ce38e.zip/node_modules/@types/estree/",
@@ -1113,6 +1123,7 @@ function $$SETUP_STATE(hydrateRuntimeState) {
             ["@babel/plugin-transform-runtime", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/preset-env", "virtual:6ccaefde7191c9bb45d0af346cf26e4ab08bd29b42aeead318622e70a68278b422e67e775502d845d9c9a57e6161d6844f12cbdec1f3e2da99ec5cb401a49fda#npm:7.5.5"],
             ["@babel/runtime", "npm:7.5.5"],
+            ["@sapper", "link:./src/node_modules/@sapper?locator=TODO%40workspace%3A."],
             ["compression", "npm:1.7.4"],
             ["npm-run-all", "npm:4.1.5"],
             ["polka", "npm:1.0.0-next.4"],
